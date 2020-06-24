@@ -52,3 +52,35 @@ The application you will be building is a Coupon app. Below is a high-level over
 * [Reading on Form Integration](https://github.com/learn-co-curriculum/rails-form_tag-readme)
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/rails-index-show-new-create-lab' title='Index, Show, New, Create Lab'>Index, Show, New, Create Lab</a> on Learn.co and start learning to code for free.</p>
+
+## Steps
+
+1. Build model and migration (in terminal)
+- rails g model Coupon coupon_code:string store:string
+- creates 
+    -app < models < coupon.rb
+    -app < db< migrag> create_coupons
+
+2. Migrate (in terminal)
+- rails db:migrate
+
+3. Routes (config < routes)
+- Create routes 
+    -Index: to have a page that shows all items
+    -New: physical page to create a new item
+    -Create: method that enables creation of new item
+    -Show: profile pages for individual items
+- Do not add as: yet 
+
+4. Create Controller (terminal)
+- rails g controller coupons 
+
+5. Route (config < routes)
+- Add as: to routes
+
+5. Add methods to controller 
+
+6. Create views (app < views < coupons)
+- index.html.erb
+- show.html.erb
+- new.html.erb 

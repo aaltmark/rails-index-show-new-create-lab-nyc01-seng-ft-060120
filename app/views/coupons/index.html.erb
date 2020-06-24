@@ -1,0 +1,7 @@
+<h1>Coupons Index</h1>
+
+<%= link_to 'Create Coupon', new_coupon_path%>
+
+<% @coupons.each do |coupon| %>
+    <div><%= link_to coupon.coupon_code, coupon_path(coupon.id) %> | <%= coupon.store %></div>
+<% end %>
